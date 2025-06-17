@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    form {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+    
+    p {
+        margin: 15px 0 5px;
+        color: #444;
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<body>
+    <form action="#" method="post">
+        <p>1.Nhap ten cua ban</p>
+        <input type="text" name="Name" placeholder="Nhap ho va ten" required><br>
+
+        <p>2.So nguoi</p>
+        <input type="number" name="SN" placeholder="Nhap so nguoi" required><br>
+
+        <p>3.Ngay gio den</p>
+        <input type="date" name="Date" placeholder="Nhap ngay gio den" required><br>
+
+        <p>4.Co yeu cau gi dac biet khong thi dien vao box duoi:</p>
+        <textarea name="feedback" rows="5" cols="50" placeholder="Nhap yeu cau tai day..."></textarea>
+
+        <br><br>
+        <input type="submit" value="Dat ban">
+    </form>
+</body>
+
+</html>
